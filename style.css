@@ -1,0 +1,101 @@
+/* === Variabel CSS untuk tema === */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --header-bg: #4a90d9;
+  --card-bg: #f0f4f8;
+  --container: #dbdfdf;
+  --foot: #5e5e5ed5;
+  --bs:#afa6a6;
+  --pbg: #eeeeee;
+}
+
+/* === Dark Mode – override variabel === */
+body.dark {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --header-bg: #003b76;
+  --card-bg: #03527c;
+  --container: #133955;
+  --foot: #ffffffd5;
+  --bs:#136b94;
+  --pbg: #333;
+}
+
+/* === Styling Dasar === */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease; /* transisi halus */
+  font-family: sans-serif;
+  margin: 0; padding: 20px;
+}
+
+/* Lengkapi styling header, .card, footer, dll. sendiri! */
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+
+}
+
+.tbl {
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card-container {
+  background-color: var(--container);
+  padding: 10px 15px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 1rem;
+  box-shadow: 10px 10px var(--bs);
+}
+
+.foot {
+  font-size: small;
+  position: fixed;
+  justify-self: center;
+  color: var(--foot);
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+.peran {
+  background-color: var(--pbg);
+  margin: 1rem;
+  padding: 1px 15px;
+  border-radius: 20px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.gbr {
+  display: flex;
+  padding: 1px;
+  margin: 10px;
+  align-content: center;
+  gap: 20px;
+}
